@@ -1,0 +1,2 @@
+const iconeTema=document.getElementById('theme-icon');function aplicarTema(tema){document.documentElement.setAttribute('data-theme',tema);tema==='dark'?iconeTema.src='imagens/sun.svg':iconeTema.src='imagens/moon.svg';localStorage.setItem('tema',tema)}
+const temaSalvo=localStorage.getItem('tema')||'light';aplicarTema(temaSalvo);document.getElementById('toggle-theme').addEventListener('click',()=>{const temaAtual=document.documentElement.getAttribute('data-theme');const novoTema=temaAtual==='light'?'dark':'light';aplicarTema(novoTema)})
