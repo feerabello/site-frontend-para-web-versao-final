@@ -1,0 +1,1 @@
+main{display:grid;grid-template-columns:1fr;gap:16px;padding:16px;grid-template-areas:"title" "about" "contact"}.title{grid-area:title;text-align:center}.about{grid-area:about}.contact{grid-area:contact}@media (min-width:768px){main{grid-template-columns:1fr 1fr;grid-template-areas:"title title" "about contact"}}
